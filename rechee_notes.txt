@@ -1,0 +1,21 @@
+This was a pretty fun project. I decided to roll my own project instead of using the skeleton because I wanted to use the new Architecture Components that google released.
+Specifically, I used ViewModels and LiveData for this project. Why did I do so? The reason being is that ViewModels and LiveData automatically handle rotations and retaining your data. There are of course many ways you could retain data before these components.
+
+You could use the usual life cycle callbacks to save data. You can put simple data in Bundles on the onsaveinstancestate & onrestroeinstancestate callbacks. Or you can used a retained fragment. However, I felt it was appropriate to use these recent google tools since they are available.
+It was a larger learning curve than I thought, and I didn't get to add many extra features. However, it does work without memory leaks and supports landscale and portrait configurations.
+
+I went with a MVVM code architecture because I think it fits very well with a small project such as this. I was able to take non-Android related code out of the activity and put it into the ViewModel. My ViewModel has a reference to a repository.
+The repository allows me to put in mock data for unit tests. This made unit testing my methods very simple since I didn't have a direct dependency on retrofit. I substitued retrofit with an in-memory model for unit testing. 
+I could also in the future replace retrofit with some other data store such as sql and not have to change a lot of code. I would have liked to write a lot more unit tests if I had time. 
+Also, if this was a larger project, I probably would have used a dependency injection framework such as Dagger 2. I've used Dagger 2 before (check out the source code for my app) and it helped out a lot with managing dependencies.
+
+I used Retrofit 2 for making the call the API. That's a very standard library and it's easy to use. Nothing much to say about that.
+I used Picasso for downloading and showing the images on the UI. I put in a placeholder so that user sees something in place of the image while it's downloading. Also, I put in an error image in case the image couldn't be downloaded for whatever reason.
+
+If I had more time one improvement I would have made is adding some caching. Currently I go to the network every time for the api data. A perfect situation in my opinion would have been to go the network, cache the data (probably using sqlite and the Room framework).
+
+
+That's all my thoughts! Thanks for the opportunity.
+
+
+- Rechee

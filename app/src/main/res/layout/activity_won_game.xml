@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rechee.namegame.WonGameActivity"
+    android:padding="16dp"
+    android:id="@+id/container">
+
+    <TextView
+        android:id="@+id/header_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/correct"
+        android:textColor="#32CD32"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/correctly_guessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_correct"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/you_correctly_guessed"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/correctly_guessed"
+        android:layout_alignBottom="@+id/correctly_guessed"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/correctly_guessed"
+        android:text="Rechee Jozil"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/label_attempts"
+        android:layout_below="@+id/correctly_guessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attempts"
+        android:textSize="14sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_toEndOf="@+id/label_attempts"
+        android:id="@+id/value_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software Engineer"
+        android:textSize="14sp"
+        android:layout_alignBottom="@+id/label_attempts"/>
+
+    <TextView
+        android:id="@+id/heading_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_attempts"
+        android:text="@string/profile"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/label_title"
+        android:layout_below="@+id/heading_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_toEndOf="@+id/label_title"
+        android:id="@+id/value_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software Engineer"
+        android:textSize="14sp"
+        android:layout_alignBottom="@+id/label_title"/>
+
+    <TextView
+        android:id="@+id/label_social_links"
+        android:layout_below="@+id/label_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social_links"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/button_new_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="newGameClicked"
+        android:text="@string/new_game" />
+
+</RelativeLayout>

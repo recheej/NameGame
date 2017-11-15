@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NameGame</string>
+    <string name="which_one_is">Which one is:</string>
+    <string name="correct">Correct!</string>
+    <string name="you_correctly_guessed">You correctly guessed</string>
+    <string name="stats">Stats</string>
+    <string name="number_of_tries">Number of Tries:</string>
+    <string name="view_details">VIEW DETAILS</string>
+    <string name="new_game">NEW GAME</string>
+    <string name="title_activity_won_game">WonGameActivity</string>
+    <string name="profile">Profile</string>
+    <string name="title">Title</string>
+    <string name="social_links">Social Links</string>
+    <string name="attempts">Attempts:</string>
+    <string name="incorrect">Incorrect</string>
+</resources>
